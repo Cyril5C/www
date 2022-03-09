@@ -1,5 +1,3 @@
-# www
-
 My personal website ;)
 ---
 
