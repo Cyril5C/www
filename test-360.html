@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="robots" content="noindex, nofollow">.
-    <title>A lire</title>
+    <title>360</title>
 </head>
     
     <script>
@@ -13,7 +13,7 @@
             const files = await response.json();
             const listElement = document.createElement("ul");
             for (const file of files) {
-                if (file.name.includes(".html")) {
+                if (file.name.includes(".jpg")) {
                     const itemElement = document.createElement("li");
                     const linkElement = document.createElement("a");
                     linkElement.href = file.path;
@@ -25,24 +25,8 @@
             }
             
             const itemElement = document.createElement("li");
-            listElement.appendChild(itemElement);
-           
-            
-            for (const file of files) {
-                if (file.name.includes(".jpg")) {
-                    const itemElement = document.createElement("li");
-                    const linkElement = document.createElement("a");
-                    linkElement.href = "https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https%3A//www.cincet.net/"+file.path+"&autoLoad=true";
-                    
-                    linkElement.textContent = file.name;
-                    linkElement.target = "_blank";
-                    itemElement.appendChild(linkElement);
-                    listElement.appendChild(itemElement);
-                }
-                
-            }
-            
-            document.body.appendChild(listElement);
+            listElement.appendChild(itemElement);      
+         
         })();
     </script>
     
@@ -51,7 +35,3 @@
     </body>
 
 </html>
-
-
-
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https://www.cincet.net/opera.jpg"></iframe>
