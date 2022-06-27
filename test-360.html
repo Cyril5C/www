@@ -16,7 +16,7 @@
                 if (file.name.includes(".jpg")) {
                     const itemElement = document.createElement("li");
                     const linkElement = document.createElement("a");
-                    linkElement.href = file.path;
+                    linkElement.href = "https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https%3A//www.cincet.net/"+file.path+"&autoLoad=true";
                     linkElement.textContent = file.name;
                     linkElement.target = "_blank";
                     itemElement.appendChild(linkElement);
@@ -24,7 +24,7 @@
                 }
             }
             
-            const itemElement = document.createElement("li");
+         
             listElement.appendChild(itemElement);      
          
         })();
